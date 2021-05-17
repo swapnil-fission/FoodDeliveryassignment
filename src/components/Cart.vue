@@ -13,22 +13,20 @@
           <v-flex style="width: 250px" v-for="(item,i) in getAllCartData" :key="i">
             <v-card>
               <v-card-text>
-                <v-row align="center" class="mx-0">
-                    <div class="itemName">Item Name:</div><br>
-                    <div class="black--text ml-2">{{item.name}}</div>
-                </v-row><br><br>
-                <v-row align="center" class="mx-0">
-                    <div class="itemPrice">Item Price:</div><br>
-                    <div class="black--text ml-2 mr-16">{{item.price}}</div><br>
-                    <!-- <button @click="minus" class="ml-8 mr-2 black--text" :id=i>-</button> -->
+                <v-row align="center">
+                    <v-card-title>Item Name</v-card-title>
+                    <div class="red--text ml-4">{{item.name}}</div>
+                </v-row>
+                <v-row align="center">
+                    <v-card-title>Item Price</v-card-title>
+                    <div class="red--text ml-2 mr-16">{{item.price}}</div><br>
                     <v-btn class="mx-2"  @click="minus" :id=i fab dark x-small color="primary"><v-icon dark>mdi-minus</v-icon></v-btn>
                     <h5 class="black--text">{{item.qty}}</h5>
                     <v-btn class="mx-2" @click="plus" :id=i fab dark x-small color="primary"><v-icon dark>mdi-plus</v-icon></v-btn>
-                    <!-- <button @click="plus" class="ml-2 black--text" :id=i>+</button> -->
-                </v-row><br><br>
-                <v-row align="center" class="mx-0">
-                    <div class="Quantity">Total Price of items:</div>
-                    <div class="black--text ml-2">{{item.tprice}}</div>
+                </v-row>
+                <v-row align="center">
+                  <v-card-title>Total Price of items:</v-card-title>
+                    <div class="red--text ml-2">{{item.tprice}}</div>
                 </v-row><br><br>
                 </v-card-text>
             </v-card>

@@ -93,6 +93,9 @@ export default new Vuex.Store({
     },
     settotalcartitems: (state, payload) => {
       state.totalcartitems = payload
+    },
+    setLoginData: (state, payload) => {
+      state.loginData = payload
     }
   },
   actions: {
@@ -104,6 +107,9 @@ export default new Vuex.Store({
     },
     settotalcartitemsAction: (state, payload) => {
       state.commit('settotalcartitems', payload)
+    },
+    setLoginDataAction: (state, payload) => {
+      state.commit('setLoginData', payload)
     }
   },
   modules: {

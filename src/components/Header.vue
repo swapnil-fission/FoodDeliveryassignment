@@ -3,7 +3,7 @@
     <div class='header'>
     <p><Sidemenu/></p>
     <div class='header-right'>
-    <router-link to='/login'><h4><v-icon>mdi-login</v-icon></h4>Login</router-link>
+    <router-link to='/'><h4><v-icon>mdi-login</v-icon></h4>Login</router-link>
     <router-link to='/cart'><h4><v-icon>mdi-cart</v-icon></h4>Cart</router-link>
   </div>
 </div>
